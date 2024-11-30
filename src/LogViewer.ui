@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LogViewer</class>
+ <widget class="QMainWindow" name="LogViewer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Real-Time Log Viewer</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTextEdit" name="logDisplay"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="regexInput"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="applyRegexButton">
+        <property name="text">
+         <string>Hilight</string>
+        </property>
+       </widget>
+      </item>
+      <!-- Add the missing fileSelectButton -->
+      <item>
+       <widget class="QPushButton" name="fileSelectButton">
+        <property name="text">
+         <string>Select Log File</string>
+        </property>
+       </widget>
+      </item>
+      <!-- Add the missing captureButton -->
+      <item>
+       <widget class="QPushButton" name="captureButton">
+        <property name="text">
+         <string>Capture Log</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar"/>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
